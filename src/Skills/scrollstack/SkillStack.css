@@ -1,0 +1,53 @@
+.skill-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.skill-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  border-left: 6px solid #007bff;
+}
+
+.profile-card-wrapper {
+    height: fit-content;
+}
+
+.skill-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  text-align: left;
+}
+
+.skill-score {
+  text-align: right;
+  color: #007bff;
+}
+
+.skill-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
