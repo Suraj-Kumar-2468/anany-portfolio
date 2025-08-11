@@ -84,7 +84,7 @@ const Skills = () => {
                         handle="javicodes"
                         status="Online"
                         contactText="Contact Me"
-                        avatarUrl="/path/to/avatar.jpg"
+                        avatarUrl="../assets/AnanyDeep.png"
                         showUserInfo={true}
                         enableTilt={true}
                         enableMobileTilt={false}
