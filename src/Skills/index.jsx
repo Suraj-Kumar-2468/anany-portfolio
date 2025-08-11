@@ -78,7 +78,7 @@ const Skills = () => {
              className='skills-content-wrapper'
             >
                 <div className='profile-card-wrapper'>
-                    <ProfileCard
+                    {/* <ProfileCard
                         name="Javi A. Torres"
                         title="Software Engineer"
                         handle="javicodes"
@@ -89,7 +89,7 @@ const Skills = () => {
                         enableTilt={true}
                         enableMobileTilt={false}
                         onContactClick={() => console.log('Contact clicked')}
-                    />
+                    /> */}
                 </div>
                 <div className='skills-content'>
                     <SkillStack skills={skillsData} />
