@@ -18,7 +18,7 @@ const Hero = () => {
                     disableRotation={false}
                 />
                 <div className='hero-content'>
-                    <p className='hero-title'>
+                    <div className='hero-title'>
                         {/* <img src={ananyLogo} alt="Anany" className='hero-logo' /> */}
                         <SplitText
                             text="Anany Deep"
@@ -33,7 +33,7 @@ const Hero = () => {
                             rootMargin="-100px"
                             textAlign="center"
                         />
-                    </p>
+                    </div>
                     <div className='hero-discription'>
 
                     <TextType
