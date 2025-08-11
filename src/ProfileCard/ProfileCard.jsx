@@ -200,7 +200,7 @@ const ProfileCardComponent = ({
     const deviceOrientationHandler = handleDeviceOrientation;
 
     const handleClick = () => {
-      if (!enableMobileTilt || location.protocol !== "https:") return;
+      if (!enableMobileTilt) return;
       if (typeof window.DeviceMotionEvent.requestPermission === "function") {
         window.DeviceMotionEvent.requestPermission()
           .then((state) => {
