@@ -21,16 +21,38 @@
     color: transparent;
 }
 
-.hero-discription {
-    width: 60%;
-    margin-top: 20px;
-    font-size: 1em;
-    font-weight: 300;
-    text-align: center;
-}
+  .hero-description {
+      width: 80%;
+      max-width: 40vw;
+      margin-top: 20px;
+      font-size: 1.1em;
+      font-weight: 300;
+      line-height: 1.5;
+      text-align: left;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards 0.5s;
+  }
 
-.hero-discription .text-type {
-    line-height: 1.5;
-    font-size: 18px;
-}
+  .hero-description-text {
+      line-height: 1.5;
+      font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+      .hero-description {
+          max-width: 80vw;
+          text-align: center;
+      }
+  }
+
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
 
