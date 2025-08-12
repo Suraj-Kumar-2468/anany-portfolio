@@ -1,7 +1,6 @@
 import React from 'react';
 import Particles from '../../Particles/Particles';
 import './Hero.css';
-import TextType from '../../TextType/TextType';
 import SplitText from '../../SplitText/SplitText';
 
 const Hero = () => {
@@ -36,13 +35,12 @@ const Hero = () => {
               textAlign="center"
             />
           </div>
-          <div className="hero-discription">
-            <TextType
-              text={['Building delightful web experiences.']}
-              typingSpeed={50}
-              showCursor={true}
-              cursorCharacter="|"
-            />
+          <div className="hero-description">
+            <p className="hero-description-text">
+              Crafting engaging interfaces with React and modern CSS.<br />
+              Passionate about responsive design and user experience.<br />
+              Always exploring new technologies to bring ideas to life.
+            </p>
           </div>
         </div>
       </div>
