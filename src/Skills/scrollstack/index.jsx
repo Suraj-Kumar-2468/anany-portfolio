@@ -28,9 +28,13 @@ const SkillStack = ({ skills }) => {
 
   return (
     <div className="skill-stack"  ref={containerRef}>
-      {skills.map((skill, index) => (
-        
-        <div className="skill-card" style={{  top : `${150+(30*(index+1))}px`}} key={index}>
+        {skills.map((skill, index) => (
+
+          <div
+            className="skill-card"
+            style={{ top: `${80 + index * 60}px` }}
+            key={index}
+          >
           <div className="skill-card-header">
             <span className="skill-name">{skill.name}</span>
             <span className="skill-score">{skill.score}%</span>
